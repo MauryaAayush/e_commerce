@@ -35,33 +35,53 @@ class FirstPage extends StatelessWidget {
               )
             ),
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 0),
+              padding: EdgeInsets.symmetric(horizontal: 5),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                      Row(
-                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
+
                         Container(
                           alignment: Alignment.centerLeft,
-                          height: 25,
-                          width: 170,
+                          height: 35,
+                          width: 230,
                           decoration: BoxDecoration(
                              color: Colors.white,
                             borderRadius: BorderRadius.all(Radius.circular(50),),
                           ),
-                          margin: EdgeInsets.symmetric(vertical:30, horizontal: 15),
+                          margin: EdgeInsets.symmetric(vertical:38, horizontal: 10),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Text('Search'),
+                              Text('Search',
+                              style: TextStyle(
+                                color: Color(0xFF6951FF),
+                                fontWeight: FontWeight.w400,
+                                fontSize: 13,
+                              ),
+                              ),
+                              SizedBox(width: 40,),
                               Icon(
                                 Icons.search,
+                                color: Color(0xFF806AFF),
                               )
                             ],
                           )
                           ),
-
+                        Icon(
+                          Icons.favorite_border_rounded,
+                        ),
+                        Icon(
+                            Icons.notifications_none_sharp
+                        ),
+                        Icon(
+                          Icons.shopping_cart_outlined,
+                        ),
+                        Icon(
+                            Icons.menu_outlined
+                        ),
 
                       ],
                     ),
