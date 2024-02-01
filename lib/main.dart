@@ -93,7 +93,11 @@ class FirstPage extends StatelessWidget {
 
                       ],
                     ),
-
+                  Row(
+                    children: [
+                      Text("Deliveri to home"),
+                    ],
+                  ),
                 ],
               ),
           )
