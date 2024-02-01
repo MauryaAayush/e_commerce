@@ -50,15 +50,19 @@ class FirstPage extends StatelessWidget {
                              color: Colors.white,
                             borderRadius: BorderRadius.all(Radius.circular(50),),
                           ),
-                          child: Text('Search',style: TextStyle(
-                            color: Colors.blue,
+                          margin: EdgeInsets.symmetric(vertical:30, horizontal: 15),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text('Search'),
+                              Icon(
+                                Icons.search,
+                              )
+                            ],
+                          )
                           ),
 
-                          ),
 
-                          margin: EdgeInsets.symmetric(horizontal: 15,vertical: 30),
-                          padding: EdgeInsets.symmetric(horizontal:10),
-                        )
                       ],
                     ),
 
