@@ -59,10 +59,10 @@ class FirstPage extends StatelessWidget {
                               style: TextStyle(
                                 color: Color(0xFF6951FF),
                                 fontWeight: FontWeight.w400,
-                                fontSize: 13,
+                                fontSize: 17,
                               ),
                               ),
-                              SizedBox(width: 40,),
+                              SizedBox(width: 80,),
                               Icon(
                                 Icons.search,
                                 color: Color(0xFF806AFF),
@@ -72,15 +72,23 @@ class FirstPage extends StatelessWidget {
                           ),
                         Icon(
                           Icons.favorite_border_rounded,
+                          color: Colors.white70,
+                          size: 28,
                         ),
                         Icon(
-                            Icons.notifications_none_sharp
+                            Icons.notifications_none_outlined,
+                          color: Colors.white70,
+                          size: 28,
                         ),
                         Icon(
                           Icons.shopping_cart_outlined,
+                          color: Colors.white70,
+                          size: 28,
                         ),
                         Icon(
-                            Icons.menu_outlined
+                            Icons.menu_outlined,
+                          color: Colors.white70,
+                          size: 28,
                         ),
 
                       ],
